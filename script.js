@@ -1,4 +1,4 @@
-function greeting() {
+greeting = () => {
     window.alert("Hello, welcome!");
 }
 
@@ -16,7 +16,7 @@ function message(magicNumber) {
 }
 }
 
-endMsg = () => {
+function endMsg() {
     if(magicNumber % 2 == 0) {
         let endMsg = "very good, and an interesting surprise awaits you.";
         return endMsg;
@@ -25,6 +25,7 @@ endMsg = () => {
         return endMsg;
     }
 }
+
 let magicMessage = message(magicNumber) + endMsg();
 
 window.alert(magicMessage);
